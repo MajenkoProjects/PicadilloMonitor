@@ -12,7 +12,7 @@ https://community.freescale.com/message/292215#29221
 
 Building the kernel module:
 In virtual_fb source directory: 
-  make -C <path to kernel sources>  M=`pwd`
+  make -C /lib/modules/$(uname -r)/build M=`pwd`
 
 Use:
 The kernel module takes a single argument vfbcount which is an integer
